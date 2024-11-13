@@ -1,0 +1,28 @@
+.nav-bar {
+    border: 2px solid black; /* Borde de 2px, color negro */
+    padding: 10px;           /* Espacio interno */
+    margin-bottom: 10px;     /* Espacio debajo del nav */
+}
+
+li {
+    border-bottom: 1px solid gray; /* Borde en la parte inferior de cada <li> */
+    padding: 5px;
+}
+
+ul {
+    border: 1px solid rgb(172, 0, 0);
+    padding: 10px;
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+a {
+    border: 1px solid green;
+    padding: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-block; /* Asegura que el padding y borde afecten bien al <a> */
+}
+
+footer {
+    border-top: 1px solid rgb(0, 0, 0); /* Borde en la parte inferior de cada <li> */
+    padding: 5px;
+}

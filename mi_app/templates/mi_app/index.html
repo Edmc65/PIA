@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <link rel="stylesheet" href="{% static 'css/styleIndex.css' %}">
+
+
+    <script>
+        window.onload = function() {
+            alert('¡Bienvenido a la página de AMD!');
+        };
+
+        function cambiarColorHeader() {
+            const colores = ['#ff5733', '#33c1ff', '#33ff57', '#f7d358', '#ff33c4'];
+            const header = document.querySelector('header');
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            header.style.backgroundColor = colorAleatorio;
+        }
+
+        function toggleDescripcion() {
+            const descripcion = document.getElementById('descripcion');
+            const boton = document.getElementById('toggleButton');
+
+            if (descripcion.style.display === 'none') {
+                descripcion.style.display = 'block';
+                boton.textContent = 'Ocultar Descripción';
+            } else {
+                descripcion.style.display = 'none';
+                boton.textContent = 'Mostrar Descripción';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header onclick="cambiarColorHeader()">
+        <h1><a href="https://www.amd.com/es.html">AMD</a></h1>
+    </header>
+    <nav class="nav-var">
+        <ul>
+            <li><a href="{% url 'index' %}"><mark>Inicio</mark></a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+            <li><a href="{% url 'tienda' %}">Tienda</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            <li><a href="{% url 'sobre_nosotros' %}">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <main>
+        <center><p><i>Más Recientes:</i></p></center>
+        <center>
+            <iframe width="424" height="238" src="https://www.youtube.com/embed/SabzU_PcrSk" title="AMD: Advancing the potential of AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </center><br><br><br><br>
+
+        <center>
+            <h2>AMD Ryzen Serie 9000</h2>
+            <article>
+                Presentamos los nuevos procesadores AMD Ryzen Serie 9000 para PC de escritorio, la opción más avanzada y potente del mundo para los fanáticos.
+            </article><br>
+            <img width="600" height="300" src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2613900-ryzen-9-9950x-og.jpg" alt="Procesadores AMD Ryzen™ para computadoras de escritorio">
+
+            <br>
+
+            <button id="toggleButton" onclick="toggleDescripcion()">Mostrar Descripción</button>
+            <div id="descripcion" style="display: none;">
+                <article>
+                    <h3>El procesador para computadoras de escritorio más potente del mundo</h3>
+                    <p>
+                        Disfruta de la velocidad que puede proporcionar el procesador para computadoras de escritorio más avanzado del mundo. 
+                        No importa si estás trabajando duro o jugando de manera intensa, el procesador AMD Ryzen™ 9950X tiene una enorme potencia indiscutible.
+                        <b>La tecnología de núcleo “Zen 5”</b> de alto rendimiento de AMD es la clave para un rendimiento revolucionario en el que puedes confiar.
+                    </p>
+                </article>
+            </div>
+        </center><br><br><br><br>
+    </main>
+    <center><footer>© 2024 Advanced Micro Devices, Inc.</footer></center>
+</body>
+</html>

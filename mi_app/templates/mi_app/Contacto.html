@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{% static 'css/styleIndex.css' %}">
+</head>
+<body>
+    <center><header><h1>Contacto</h1></header></center>
+    <header><h1>AMD</h1></header>
+    <nav class="nav-var">
+        <ul>
+            <li><a href="{% url 'index' %}"><mark>Inicio</mark></a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+            <li><a href="{% url 'tienda' %}">Tienda</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            <li><a href="{% url 'sobre_nosotros' %}">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    <br>
+<main>
+
+    <center><img src="https://www.amd.com/content/dam/amd/en/images/photography/corporate/2211057-amd-contact-banner.jpg" alt="https://www.amd.com/content/dam/amd/en/images/photography/corporate/2211057-amd-contact-banner.jpg" width="1280">
+
+    <h1>Comunicate con nosotros</h1>
+    <label for="email"><h3> <a href="mailto:amdsupport1@hotmail.com">Envianos un correo directo</a></h3>
+    </label><br>
+
+    <h4>Escribenos aquí:</h4>
+    <p>Ingresa tu correo: </p>
+        <br><input type="email" id="email" size="30"/>
+
+    <p>Escribe aquí:</p> <textarea name="Texto" id="texto"></textarea><br><br>
+    <button class="btnenviar" type="submit">Enviar</button></center>
+
+</main> <br>
+    <br><center><footer>© 2024 Advanced Micro Devices, Inc.</footer></center>
+</body>
+</html>

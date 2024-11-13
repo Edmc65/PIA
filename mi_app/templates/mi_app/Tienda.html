@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="{% static 'css/styleIndex.css' %}">
+</head>
+<body>
+        <center><header><h1>Tienda</h1></header></center>
+        <header><h1>AMD</h1></header>
+        <nav class="nav-var">
+            <ul>
+                <li><a href="{% url 'index' %}"><mark>Inicio</mark></a></li>
+                <li><a href="{% url 'productos' %}">Productos</a></li>
+                <li><a href="{% url 'tienda' %}">Tienda</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'sobre_nosotros' %}">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <br>
+    <main>
+
+        <center>
+            <table>
+                <thead><h2>Procesadores para computadoras de escritorio</h2>
+                    <h3> <mark>Para gaming increíble, productividad de nivel profesional y experiencias mágicas de IA</mark> </h3></thead>
+                <tr>
+                    <th>AMD Ryzen™ 9 9950X <br>&emsp;
+                    <b>$13,000</b></th>
+                    <th>AMD Ryzen™ 9 9900X <br>&emsp;
+                    <b>$11,500</b></th>
+                    <th>AMD Ryzen™ 7 9700X <br>&emsp;
+                    <b>$9,000</b></th><br>
+                    </tr>
+                <tr>
+                    <td> <center><img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2613900-ryzen-9-9950x.jpg" alt="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2613900-ryzen-9-9950x.jpg" width="350"></center>
+
+                        <li>Modelo de tarjeta grafica: <i>AMD Radeon™ Graphics &emsp;</i></li>
+                        <li>N.º de núcleos de CPU: <i>16</i> </li>
+                        <li>N.º de subprocesos: <i>32</i></li>
+                        <li>Reloj Turbo Maximo: <i>Hasta 5.7 GHz</i> </li>
+                    </td>
+
+                    <td> <br><center> <img src="https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL1500_.jpg" alt="https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL1500_.jpg" width="260"> <br> <br></center>
+
+                        <br><li>Modelo de tarjeta grafica: <i>AMD Radeon™ Graphics &emsp;</i></li>
+                        <li>N.º de núcleos de CPU: <i>12</i> </li>
+                        <li>N.º de subprocesos: <i>24</i></li>
+                        <li>Reloj Turbo Maximo: <i>Hasta 5.6 GHz</i> </li>
+                    </td>
+
+                    <td><center> <img src="https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL1500_.jpg" alt="https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL1500_.jpg" width="260"><br><br></center>
+                        &emsp;
+                        <br><li>Modelo de tarjeta grafica: <i>AMD Radeon™ Graphics &emsp;</i></li>
+                        <li>N.º de núcleos de CPU: <i>8</i> </li>
+                        <li>N.º de subprocesos: <i>16</i></li>
+                        <li>Reloj Turbo Maximo: <i>Hasta 5.5 GHz</i>
+                    </td><br>
+
+                </tr>
+            </table
+        </center> <br>
+    </main>
+</body>
+<br>
+<center><footer>© 2024 Advanced Micro Devices, Inc.</footer></center>
+</html>
